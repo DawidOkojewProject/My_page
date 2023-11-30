@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	// border: 1px solid black;
+	// padding: 10px 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+
+	align-items: center;
+	width: 1000px;
+	justify-content: space-between;
+	img {
+		height: 70px;
+		cursor: pointer;
+	}
+
+	&--items {
+		display: flex;
+		cursor: pointer;
+		&__item {
+			padding: 24px 10px;
+			font-size: 1.4rem;
+			transition: background-color 0.3s;
+			transition: color 0.3s;
+		}
+		&__item:hover {
+			background-color: #000;
+			color: #fff;
+		}
+	}
+}
+.img {
+	// padding: 30px 0;
+	&--hero {
+		width: 100%;
+		height: 400px;
+		background-image: url('/dist/img/startup-593341_1920.jpg');
+		background-position: center;
+		background-size: cover;
+		z-index: -2;
+		position: relative;
+		&__shadow {
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color: #000000, $alpha: 0.3);
+			z-index: -1;
+		}
+		&__text {
+			position: absolute;
+			top: 150px;
+			margin-left: 100px;
+
+			color: #fff;
+			z-index: 1;
+			h1 {
+				font-size: 2rem;
+			}
+			p {
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+.about-me {
+	padding: 30px 0;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	h2 {
+		text-align: center;
+	}
+	&--container {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		padding: 40px 0;
+		&__photo {
+			width: 50%;
+			background-image: url('https://cdn.pixabay.com/photo/2021/03/11/17/46/spider-man-6087809_640.jpg');
+			height: 400px;
+			padding: 10px;
+		}
+		&__text {
+			width: 50%;
+			padding: 0px 40px;
+		}
+	}
+}
+.offer {
+	padding: 30px 0;
+	// width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	h2 {
+		text-align: center;
+	}
+	&--container {
+		padding: 30px 0;
+		display: flex;
+		justify-content: center;
+		&__item {
+			padding: 20px;
+			height: 500px;
+			width: 400px;
+			background-color: #fbfbfb;
+			margin: 10px;
+			border-radius: 15px;
+			box-shadow: 9px 22px 52px -7px rgba(57, 56, 56, 0.7);
+			transition: transform 0.3s;
+			.price {
+				text-align: center;
+				padding: 20px;
+				font-size: 1.6rem;
+			}
+			.offer-button {
+				cursor: pointer;
+				padding: 5px 25px;
+				border-radius: 5px;
+				border: none;
+			}
+			h3 {
+				padding: 15px 0;
+				text-align: center;
+				font-size: 1.6rem;
+			}
+		}
+		&__item:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	background-color: #ece8e8;
+	padding: 12px;
+	font-size: 0.8rem;
+	.space {
+		padding-bottom: 4px;
+	}
+}
