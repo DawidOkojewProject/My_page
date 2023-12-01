@@ -27,15 +27,32 @@
 		display: flex;
 		cursor: pointer;
 		&__item {
-			padding: 24px 10px;
+			padding: 24px 15px;
 			font-size: 1.4rem;
 			transition: background-color 0.3s;
 			transition: color 0.3s;
+			text-decoration: none;
+			color: #000;
 		}
 		&__item:hover {
 			background-color: #000;
 			color: #fff;
 		}
+	}
+}
+.right{
+	text-align: center;
+	padding: 10px 60px;
+	a{
+		text-decoration: none;
+		color: #000;
+		text-decoration: underline;
+		transform: color .3s,font size 0.3s;
+		
+	}
+	a:hover{
+		color:rgb(15, 171, 119) ;
+		font-size: 1.03rem;
 	}
 }
 .img {
@@ -112,9 +129,9 @@
 			min-height: 500px;
 			width: 400px;
 			background-color: #fbfbfb;
-			margin: 10px;
+			margin: 15px;
 			border-radius: 15px;
-			box-shadow: 9px 22px 52px -7px rgba(57, 56, 56, 0.7);
+			box-shadow: 10px 5px 12px 7px rgba(57, 56, 56, 0.3);
 			transition: transform 0.3s;
 			.price {
 				text-align: center;
@@ -123,17 +140,20 @@
 			}
 			.button-container {
 				display: flex;
-				margin-top: 70px;
+				margin-top: 60px;
 				width: 100%;
 				justify-content: center;
 				align-items: end;
 
 				.offer-button {
+					background-color: #fff;
 					cursor: pointer;
-					padding: 5px 25px;
+					padding: 5px 60px;
 					border-radius: 5px;
 					border: none;
 					transition: transform 0.3s;
+					font-size: 1.2rem;
+					box-shadow: 0px 0px 7px 4px rgba(57, 56, 56, 0.2);
 				}
 				.offer-button:hover{
 					transform: scale(1.2);
