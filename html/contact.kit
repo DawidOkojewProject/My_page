@@ -11,26 +11,32 @@
 </head>
 <body>
     
-
+    <?php
+    include 'mail.php';
+    ?>
  <!--@include 'nav.kit'-->
 
-    <section id="contact" class="contact">
-        <h1>Kontakt</h1>
-        <form id="contact-form" class="contact-form">
-            <label for="name">Imię:</label>
-            <input type="text" id="name" name="name" placeholder="Podaj imię" required>
+ <form action="mail.php" method="post" class="contact-form">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Podaj adres mailowy" required>
+    <div class="contact-box">
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="contact-box">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="contact-box">
+      <label for="msg">Wiadomość:</label>
+      <textarea name="msg" id="msg" required></textarea>
+    </div>
 
-            <label for="message">Wiadomość:</label>
-            <textarea id="message" name="message" rows="6"  required></textarea>
+    <button>Wyślij</button>
 
-            <button type="submit">Wyślij</button>
-        </form>
-    </section>
+  </form>
 
 
      <!--@include 'footer.kit-->
+     <script src="dist/js/contact.min.js"></script>
 </body>
 </html>
